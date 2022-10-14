@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Email Subscribe</title>
+</head>
+<body>
+    <!-- Background Container -->
+    <div class="flex items-center justify-center h-screen bg-zinc-700">
+        <!-- Card -->
+        <div class="bg-zinc-800 p-2 mx-6 rounded-2xl">
+            <!-- Flex Container -->
+            <div class="flex flex-col md:flex-row rounded-l-xl">
+                <!-- Image -->
+                <img src="images/image.jpg" 
+                alt="" 
+                class="object-fit
+                h-80 md:h-64 
+                rounded-xl md:rounded-l-xl md:rounded-r-none
+                transform
+                hover:scale-105 hover:rounded-xl
+                dufration-200">
+                <!-- Content -->
+                <div class="p-6 md:p-12">
+                    <h2 class="font-serif text-xl font-medium text-white
+                    text-center md:text-left">
+                        식단을 관리해보세요.
+                    </h2>
+                    <p class="max-w-xs my-4 text-sm leading-5 tracking-wide text-gray-500
+                    text-center md:text-left">
+                        건강하고 맛있는 음식을 먹어보세요. 우리의 뉴스레터를 구독해주시면 양질의 정보를 안내해드립니다.
+                    </p>
+
+                    <div class="flex flex-col md:flex-row 
+                    mt-5 
+                    space-y-4 md:space-x-3 md:space-y-0">
+                        <input type="text" 
+                        placeholder="이메일 주소를 입력하세요"
+                        class="p-2 px-4 text-center text-white bg-zinc-800 border border-zinc-600
+                        placeholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left
+                        focus-none">
+
+                        <button class="px-5 py-3 text-xt rounded-md text-zicn-800 bg-lime-500 hover:bg-lime-700 hover:text-white duration-500">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
